@@ -14,8 +14,7 @@ print('''
     ''')
 print("Hello there trainer!Welcome to Viridian Forest!From here on out, you will be encountering some wild Pokemon.\n")
 print("Your goal is to have a positive training experience with Pikachu!\n ")
-pikachuHere = input("Is Pikachu here with you today? Yes or No? \n")
-pikachu = pikachuHere.lower()
+pikachu = input("Is Pikachu here with you today? Yes or No? \n").lower()
 if pikachu == "yes":
     print(''' 
        \:.             .:/
@@ -32,8 +31,7 @@ if pikachu == "yes":
            :-._____.-:
           `''       `''')
     print("Oh! I didn't notice you there, Pikachu! I hope you both are ready to encounter some wild Pokemon!\n ")
-    enterNow = input("Are you ready to enter the Viridian Forest? Yes or No? \n")
-    enter = enterNow.lower()
+    enter = input("Are you ready to enter the Viridian Forest? Yes or No? \n").lower()
     if enter == "yes":
         print('''   ,,,                      ,,,
        {{{}}    ,,,             {{{}}    ,,,
@@ -85,24 +83,21 @@ if pikachu == "yes":
                         .'        /"'          |  "'   '_
                       /_|.-'\ ,".             '.'`__'-( \\
                         / ,"'"\,'               `/  `-.|"''')
-        do = input("Pikachu is ready to attack.\nTrainer, what do you say? QUICK ATTACK or THUNDER?\n ")
-        doNow = do.upper()
+        do = input("Pikachu is ready to attack.\nTrainer, what do you say? QUICK ATTACK or THUNDER?\n ").upper()
 
-        if doNow == "QUICK ATTACK":
+        if do == "QUICK ATTACK":
             print(" \nA critical hit!")
-            do2 = input("Pikachu is ready to attack again.\nTrainer, what do you say? IRON TAIL or THUNDER BOLT?\n ")
-            do2Now = do2.upper()
-
-            if do2Now == "THUNDER BOLT":
+            do2 = input("Pikachu is ready to attack again.\n"
+                        "Trainer, what do you say? IRON TAIL or THUNDER BOLT?\n").upper()
+            if do2 == "THUNDER BOLT":
                 print(" \nIt's super effective! Wild Charzard is paralyzed! It can't move!\n ")
                 do3 = input(
                     "What will you do, Trainer?\n"
                     "say 'BAG' to throw a Pokeball\n"
                     "say 'ATTACK' to continue battling\n"
-                    "say 'RUN' to leave this battle\n ")
-                do3Now = do3.upper()
+                    "say 'RUN' to leave this battle\n ").upper()
 
-                if do3Now == "BAG":
+                if do3 == "BAG":
                     print('''      
             |@@@@|     |####|
             |@@@@|     |####|
@@ -119,40 +114,40 @@ if pikachu == "yes":
              :  *       *  :
               `.  * * *  .'
                 `-.....-''')
-                    print("Gotcha! Charzard was caught!\nPikachu is happy and proud of your achievement!\nYou win!")
-                elif do3Now == "ATTACK":
+                    print("Gotcha! Charizard was caught!\nPikachu is happy and proud of your achievement!\nYou win!")
+                elif do3 == "ATTACK":
                     print(
                         "Pikachu is exhausted. "
-                        "Embarassed by its lack of stamina, Pikachu's ego is hurt and doesn't want to continue further."
+                        "Embarrassed by its lack of stamina, "
+                        "Pikachu's ego is hurt and doesn't want to continue further."
                         "\nGame over.")
-                elif do3Now == "RUN":
+                elif do3 == "RUN":
                     print(
                         "Pikachu looks at you with disappointment. "
                         "Pikachu's ego is hurt and doesn't want to continue further."
                         "\nGame over.")
                 else:
                     print(
-                        "Hm? What was that? While you were fumbling over your decision, Charzard flew away. "
+                        "Hm? What was that? While you were fumbling over your decision, Charizard flew away. "
                         "Pikachu is not happy.\nGame over.")
 
-            elif do2Now == "IRON TAIL":
+            elif do2 == "IRON TAIL":
                 print(
-                    "It's not very effective. Wild Charzard scoffs and flies away.\n"
-                    "Pikachu's ego is hurt and doesn't want to continue further.\n"
-                    "Game over.")
+                    "It's not very effective. Wild Charizard scoffs and flies away.\n"
+                    "Pikachu's ego is hurt and doesn't want to continue further.\nGame over.")
             else:
                 print(
                     "Pikachu is confused and didn't understand your command.\n"
-                    "Embarassed at your lack of battle experience, Pikachu walks back home alone.\nGame over.")
+                    "Embarrassed at your lack of battle experience, Pikachu walks back home alone.\nGame over.")
 
-        elif doNow == "THUNDER":
+        elif do == "THUNDER":
             print(
-                " \nTHUNDER MISSES. Wild Charzard lazily looks at you with disappointment and flies away.\n"
+                " \nTHUNDER MISSES. Wild Charizard lazily looks at you with disappointment and flies away.\n"
                 "Pikachu's ego is hurt and doesn't want to continue further.\nGame over.")
         else:
             print(
                 "Pikachu is confused and didn't understand your command.\n"
-                "mbarassed at your lack of battle experience, Pikachu walks back home alone.\nGame over.")
+                "Embarrassed at your lack of battle experience, Pikachu walks back home alone.\nGame over.")
     else:
         print("Come again next time!")
 else:
